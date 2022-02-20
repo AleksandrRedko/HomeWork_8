@@ -37,7 +37,7 @@
         <ul class="auth-nav list">
           <li class="item">
             <a href="mailto:info@devstudio.com" class="link">
-              <svg class="aust-nav__svg" width="16px" height="11.2px">
+              <svg class="aust-nav__svg" width="20px" height="16.2px">
                 <use href="./images/symbol-defs.svg#icon-envelope"></use>
               </svg>
               info@devstudio.com</a
@@ -45,7 +45,7 @@
           </li>
           <li class="item">
             <a href="tel:+38 096 111 11 11" class="link">
-              <svg class="aust-nav__svg" width="10px" height="14.94px">
+              <svg class="aust-nav__svg" width="15px" height="17.94px">
                 <use href="./images/symbol-defs.svg#icon-telefon"></use>
               </svg>
               +38 096 111 11 11</a
@@ -63,9 +63,11 @@
             ЭФФЕКТИВНЫЕ РЕШЕНИЯ<br />
             ДЛЯ ВАШЕГО БИЗНЕСА
           </h1>
-          <button type="button" class="primery">Заказать услугу</button>
+          <button type="button" class="primery" data-modal-open>
+            Заказать услугу
+          </button>
         </div>
-        <div class="backdrop">
+        <div class="backdrop is-hidden" data-modal>
           <div class="modal">
             <h2 class="modal-text">Оставьте свои данные, мы вам перезвоним</h2>
             <div class="imputs"></div>
@@ -73,6 +75,11 @@
               Соглашаюсь с рассылкой и принимаю Условия договора
             </p>
             <button type="button" class="primery">Отправить</button>
+            <button type="button" class="button-close" data-modal-close>
+              <svg class="svg-close" width="18px" height="18px">
+                <use href="./images/symbol-defs.svg#icon-close"></use>
+              </svg>
+            </button>
           </div>
         </div>
       </section>
@@ -491,5 +498,6 @@
         </div>
       </div>
     </footer>
+    <script src="./js/modal.js"></script>
   </body>
 </html>

@@ -56,6 +56,10 @@ body {
   height: 100%;
   background: rgba(0, 0, 0, 0.2);
 }
+.is-hidden {
+  opacity: 0;
+  pointer-events: none;
+}
 
 .modal {
   position: absolute;
@@ -94,6 +98,32 @@ body {
 .modal-p {
   margin-bottom: 30px;
 }
+
+.button-close {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  width: 30px;
+  height: 30px;
+
+  border-radius: 50%;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+  background-color: #fff;
+}
+.svg-close {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.button-close:hover {
+  fill: var(--accent-color);
+}
+
 /* logo */
 .logo {
   color: var(--title-text-color);
@@ -190,6 +220,7 @@ p {
 }
 /* auth-nav */
 .aust-nav__svg {
+  display: block;
   margin-right: 10px;
 }
 
@@ -203,7 +234,7 @@ p {
 }
 
 .auth-nav .link {
-  display: inline-flex;
+  display: flex;
   align-items: center;
   padding-top: 32px;
   padding-bottom: 32px;
@@ -284,6 +315,7 @@ p {
   font-weight: 700;
   font-size: 16px;
   line-height: 1.87;
+  letter-spacing: 0.06em;
 }
 .button .secondary {
   padding: 6px 22px;
