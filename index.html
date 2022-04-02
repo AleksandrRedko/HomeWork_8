@@ -70,11 +70,54 @@
         <div class="backdrop is-hidden" data-modal>
           <div class="modal">
             <h2 class="modal-text">Оставьте свои данные, мы вам перезвоним</h2>
-            <div class="imputs"></div>
-            <p class="modal-p">
-              Соглашаюсь с рассылкой и принимаю Условия договора
-            </p>
-            <button type="button" class="primery">Отправить</button>
+            <form class="form-complete" autocomplete="on" novalidate>
+              <div class="div-label">
+                <input
+                  id="name"
+                  class="inputs"
+                  type="text"
+                  name="name"
+                  placeholder=" "
+                />
+                <label class="labels" for="name">Имя</label>
+              </div>
+
+              <div class="div-label">
+                <input
+                  class="inputs"
+                  type="tel"
+                  name="tel"
+                  id="tel"
+                  placeholder=" "
+                />
+                <label class="labels" for="tel">Телефон</label>
+              </div>
+
+              <div class="div-label">
+                <input
+                  class="inputs"
+                  type="email"
+                  id="email"
+                  name="email"
+                  placeholder=" "
+                />
+                <label class="labels" for="email">Почта</label>
+              </div>
+
+              <label>
+                <textarea
+                  class="textarea"
+                  name="Feedback"
+                  rows="10"
+                  placeholder="Комментарий"
+                ></textarea>
+              </label>
+
+              <p class="modal-p">
+                Соглашаюсь с рассылкой и принимаю Условия договора
+              </p>
+              <button type="submit" class="primery">Отправить</button>
+            </form>
             <button type="button" class="button-close" data-modal-close>
               <svg class="svg-close" width="18px" height="18px">
                 <use href="./images/symbol-defs.svg#icon-close"></use>
@@ -490,9 +533,20 @@
           <ul>
             <li><b class="white">подпишитесь на рассылку</b></li>
             <li>
-              <button type="button" class="primery button-footer">
-                Подписаться
-              </button>
+              <form>
+                <label>
+                  <input
+                    class="subscribe"
+                    type="email"
+                    autocomplete="on"
+                    placeholder="Email"
+                    required
+                  />
+                </label>
+                <button type="submit" class="primery button-footer">
+                  Подписаться
+                </button>
+              </form>
             </li>
           </ul>
         </div>
