@@ -80,7 +80,9 @@
                   placeholder=" "
                 />
                 <label class="labels" for="name">Имя</label>
-                <span class="icon"></span>
+                <svg class="icon">
+                  <use href="./images/symbol-defs.svg#icon-person"></use>
+                </svg>
               </div>
 
               <div class="div-label">
@@ -92,7 +94,9 @@
                   placeholder=" "
                 />
                 <label class="labels" for="tel">Телефон</label>
-                <span class="icon"></span>
+                <svg class="icon">
+                  <use href="./images/symbol-defs.svg#icon-phone22"></use>
+                </svg>
               </div>
 
               <div class="div-label">
@@ -104,7 +108,9 @@
                   placeholder=" "
                 />
                 <label class="labels" for="email">Почта</label>
-                <span class="icon"></span>
+                <svg class="icon">
+                  <use href="./images/symbol-defs.svg#icon-email"></use>
+                </svg>
               </div>
 
               <label>
@@ -115,10 +121,12 @@
                   placeholder="Комментарий"
                 ></textarea>
               </label>
-
-              <p class="modal-p">
+              <label class="modal-p">
+                <input class="checkbox" type="checkbox" />
                 Соглашаюсь с рассылкой и принимаю Условия договора
-              </p>
+              </label>
+
+              <p class="modal-p"></p>
               <button type="submit" class="primery">Отправить</button>
             </form>
             <button type="button" class="button-close" data-modal-close>

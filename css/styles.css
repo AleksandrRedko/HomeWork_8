@@ -95,13 +95,18 @@ body {
 
 .inputs {
   padding: 0px;
+  padding-left: 42px;
   margin-bottom: 28px;
   width: 448px;
   height: 40px;
+  outline: none;
 
-  text-align: ;
-  border: 1px solid #21212133;
+  font: initial;
+  border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
+
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .labels {
   position: absolute;
@@ -109,6 +114,8 @@ body {
 
   top: 12px;
   left: 42px;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .div-label {
   position: relative;
@@ -117,11 +124,19 @@ body {
   margin-bottom: 28px;
 }
 .inputs:focus {
-  border-color: #2196f3;
+  font: inherit;
+  border: 1px solid var(--accent-color);
+
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.inputs:focus + .labels,
 .inputs:not(:placeholder-shown) + .labels {
+  transform: translateY(-30px) translateX(-25px);
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.inputs:focus + .labels {
   transform: translateY(-30px) translateX(-25px);
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -135,12 +150,20 @@ body {
   height: 18px;
   top: 50%;
   left: 16px;
-  background-color: #2a2a2a;
+  fill: #212121;
+
   transform: translateY(-50%);
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-.inputs:focus ~ .icon,
+
 .inputs:not(:placeholder-shown) ~ .icon {
-  background-color: #2196f3;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.inputs:focus ~ .icon {
+  fill: var(--accent-color);
+
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -151,11 +174,33 @@ body {
   resize: none;
   width: 448px;
   height: 120px;
+  outline: none;
 
   border: 1px solid rgba(33, 33, 33, 0.2);
   box-sizing: border-box;
   border-radius: 4px;
+
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
+.textarea:focus {
+  border: 1px solid var(--accent-color);
+
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+/* checkbox */
+.checkbox {
+  position: absolute;
+  /* -webkit-appearance: none;
+  -moz-appearance: none;
+appearance: none; */
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+}
+
 .modal-p {
   margin-bottom: 30px;
 }
