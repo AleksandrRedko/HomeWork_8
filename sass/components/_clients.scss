@@ -1,0 +1,30 @@
+.clients {
+  display: block;
+  width: 170px;
+  height: 90px;
+  margin: 0px;
+  padding: 20px 63px;
+  border: 1px solid #afb1b8;
+  box-sizing: border-box;
+  border-radius: 4px;
+
+  fill: #afb1b8;
+
+  transition-property: border, fill;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.clients:focus,
+.clients:hover {
+  fill: $accent-color;
+  border: 1px solid $accent-color;
+}
+.clients-svg {
+  display: block;
+  width: 44.27px;
+  height: 49.23px;
+}
+a {
+  color: $primery-text-color;
+}
