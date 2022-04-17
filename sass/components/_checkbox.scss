@@ -7,8 +7,7 @@
   overflow: hidden;
   clip: rect(0 0 0 0);
   outline: none;
-}
-.checkbox-icon {
+  &-icon {
   display: inline-block;
   width: 16px;
   height: 15px;
@@ -19,6 +18,8 @@
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
+}
+
 .checkbox:checked + .checkbox-icon {
   background-color: $accent-color;
   background-image: url(/images/icon-chec.svg);
@@ -51,6 +52,9 @@
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
   background-color:$primery-white-color;
+  &:hover {
+  fill: $accent-color;
+}
 }
 .svg-close {
   position: absolute;
@@ -59,6 +63,3 @@
   transform: translate(-50%, -50%);
 }
 
-.button-close:hover {
-  fill: $accent-color;
-}
