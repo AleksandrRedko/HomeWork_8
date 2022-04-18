@@ -69,8 +69,7 @@
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
 
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  @extend %transition;
 }
 .labels {
   position: absolute;
@@ -78,27 +77,23 @@
 
   top: 12px;
   left: 42px;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  @extend %transition;
 }
 
 .inputs:focus {
   font: inherit;
   border: 1px solid $accent-color;
 
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+ @extend %transition;
 }
 
 .inputs:not(:placeholder-shown) + .labels {
   transform: translateY(-30px) translateX(-25px);
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  @extend %transition;
 }
 .inputs:focus + .labels {
   transform: translateY(-30px) translateX(-25px);
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+ @extend %transition;
   color:$accent-color;
 }
 
@@ -112,19 +107,16 @@
   fill:$title-text-color;
 
   transform: translateY(-50%);
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  @extend %transition;
 }
 
 .inputs:not(:placeholder-shown) ~ .icon {
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  @extend %transition;
 }
 .inputs:focus ~ .icon {
   fill: $accent-color;
 
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  @extend %transition;
 }
 
 .textarea {
@@ -139,13 +131,11 @@
   box-sizing: border-box;
   border-radius: 4px;
 
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  @extend %transition;
 
-  &.textarea:focus {
+  &:focus {
   border: 1px solid $accent-color;
 
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  @extend %transition;
 }
 }

@@ -37,9 +37,7 @@
   height: 44px;
   margin: 0px 32px 24px;
 }
-.networks-item:not(:last-child) {
-  margin-right: 10px;
-}
+
 .networks-link {
   display: block;
   padding: 12px;
@@ -48,14 +46,13 @@
   background-color:$primery-white-color;
 
   transition-property: background-color, fill;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  @extend %transition;
+
+  &:hover ,
+  &:focus { fill: $primery-white-color;
+  background-color: $accent-color;}
 }
-.networks-link:focus,
-.networks-link:hover {
-  fill: $primery-white-color;
-  background-color: $accent-color;
-}
+
 .svg-link {
   display: block;
   width: 20px;
@@ -68,4 +65,8 @@
   align-items: center;
   width: 44px;
   height: 44px;
+
+  &:not(:last-child) {
+  margin-right: 10px;
+}
 }

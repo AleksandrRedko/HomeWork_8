@@ -1,15 +1,15 @@
-.footer {
-  background-color: $background-footer;
-  color: $footer-text-color;
-}
-
 .container-footer {
   display: flex;
   justify-content: space-between;
   align-items: center;
   height: 252px;
 }
-.footer .white {
+
+.footer {
+  background-color: $background-footer;
+  color: $footer-text-color;
+
+  & .white {
   display: block;
   color: $primery-white-color;
   font-weight: 700;
@@ -17,45 +17,50 @@
   line-height: 1.14;
   margin-bottom: 20px;
 }
-.footer .accent {
+
+  & .accent {
   color: $primery-white-color;
 }
-.footer .text-normal {
+  & .text-normal {
   font-style: normal;
 }
+}
+
+ 
 .svg-footer {
   display: block;
   width: 44px;
   height: 44px;
 }
 
-.network-footer {
-  display: flex;
-}
+
 .network-footer {
   display: flex;
   justify-content: space-between;
   align-items: center;
   width: 206px;
   height: 44px;
-}
 
-.network-footer > li:not(:last-child) {
-  margin-right: 10px;
-}
-.network-footer > li {
+  & > li {
   padding: 12px;
   border-radius: 50%;
   background-color: rgba(255, 255, 255, 0.1);
 
   transition-property: background-color;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
+  @extend %transition;
 
-.network-footer > li:hover {
+  &:hover {
   background-color: $accent-color;
 }
+
+}
+}
+
+.network-footer > li:not(:last-child) {
+  margin-right: 10px;
+}
+
+
 
 
 .subscribe {

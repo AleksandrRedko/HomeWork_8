@@ -15,8 +15,7 @@
   border: 2px solid $title-text-color;
   border-radius: 4px;
 
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  @extend %transition;
 }
 }
 
@@ -27,8 +26,7 @@
   background-origin: border-box;
   border-color: $accent-color;
 
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  @extend %transition;
 }
 
 .modal-p {
@@ -48,8 +46,7 @@
 
   border-radius: 50%;
   border: 1px solid rgba(0, 0, 0, 0.1);
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  @extend %transition;
 
   background-color:$primery-white-color;
   &:hover {

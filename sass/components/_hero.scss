@@ -14,9 +14,8 @@
     ),
     url(../../images/header.jpg);
   text-align: center;
- 
-}
-.hero .title {
+
+  & .title {
   margin-top: 0px;
   margin-bottom: 30px;
 
@@ -27,3 +26,6 @@
   line-height: 1.36;
   letter-spacing: 0.06em;
 }
+ 
+}
+
