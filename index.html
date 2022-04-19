@@ -14,7 +14,7 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
     />
-   <link rel="stylesheet" href="./dist/css/main.min.css">
+    <link rel="stylesheet" href="./dist/css/main.min.css" />
   </head>
   <body>
     <!-- шапкааа-->
@@ -124,7 +124,8 @@
               <label class="modal-p">
                 <input class="checkbox" type="checkbox" />
                 <span class="checkbox-icon"></span>
-                Соглашаюсь с рассылкой и принимаю Условия договора
+                Соглашаюсь с рассылкой и принимаю
+                <a href="#"> Условия договора</a>
               </label>
 
               <button type="submit" class="primery">Отправить</button>
@@ -511,7 +512,7 @@
           <b class="white">присоединяйтесь</b>
           <ul class="network-footer">
             <li>
-              <a href="svg-footer">
+              <a href="#">
                 <svg class="svg-link">
                   <use href="./images/symbol-defs.svg#icon-instagramf"></use>
                 </svg>
@@ -544,8 +545,8 @@
           <ul>
             <li><b class="white">подпишитесь на рассылку</b></li>
             <li>
-              <form>
                 <label>
+              <form name="footer-form">
                   <input
                     class="subscribe"
                     type="email"
@@ -563,6 +564,7 @@
         </div>
       </div>
     </footer>
+
     <script src="./js/modal.js"></script>
   </body>
 </html>
