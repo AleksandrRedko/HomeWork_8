@@ -1,20 +1,49 @@
+body{
+background-color: $primery-white-color;
+color: $primery-text-color;
+font-family: 'Roboto';
+font-style: normal;
+font-size: 14px;
+line-height: 1.2;
+letter-spacing: 0.03em;
+
+
+
+letter-spacing: 0.03em;  
+}
 a{
  text-decoration: none;
- margin: 0px;
- padding: 0px;   
+   
 }
 li{
  list-style: none;   
 }
 ul{
+ list-style: none;
  padding: 0px;
  margin: 0px;   
 }
 h1,
 h2,
 h3,
-h4,
-h5{
+p{
  margin: 0px;
- padding: 0px;   
+    
+}
+html {
+  box-sizing: border-box;
+}
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+
+
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
 }
