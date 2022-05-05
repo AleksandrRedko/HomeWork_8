@@ -3,6 +3,7 @@
 font-weight: 700;
 font-size: 24px;
 letter-spacing: 0.03em;
+line-height: 1.16;
 
 color: $title-text-color;
    
@@ -11,8 +12,9 @@ color: $title-text-color;
 
  font-family: Raleway, sans-serif;
  font-style: normal;
- font-weight: 400, Regular;
+ font-weight: 700;
  font-size: 24px;
+ line-height: 1.16;
  letter-spacing: 0.03em;
 
  color: $accent-color;
@@ -21,23 +23,38 @@ color: $title-text-color;
 .position-menu{
   position: relative;
  display: block;
+ margin-left: auto;
+  margin-right: auto;
  width: 480px;
  height: 60px;
  
- border: 2px solid red;
 
+
+}
+.position-menu::after{
+  content: ' ';
+  position: absolute;
+  display: inline-block;
+  top: 59px;
+  left: 0;
+  display: block;
+  width: 480px;
+  height: 0px;
+
+  border: 1px solid #ECECEC;
 }
 .header{
   display: flex;
   justify-content: space-between;
   
-  margin: 0 auto;
+  
   padding: 10px 15px;
   align-items: center;
   width: 480px;
   height: 60px;
   
 }
+
 .mobile-menu{
   position: absolute;
   top:100%; 
@@ -57,7 +74,7 @@ color: $title-text-color;
    
   font-weight: 500;
   font-size: 18px;
-  line-height: 1.16px;
+  line-height: 1.16;
   letter-spacing: 0.02em;
   text-size-adjust: 100%;
 
@@ -66,7 +83,22 @@ color: $title-text-color;
   &:focus{
    color: $accent-color;   
   }
-     
+  &.current{
+    position: relative;
+    color: $accent-color;
+  }   
+ }
+
+ .site-nav_link.current::after{
+   content: ' ';
+   position: absolute;
+   top:29px;
+   left: 0px;
+   width: 100%;
+   
+   
+   border: 2px solid $accent-color;
+   border-radius: 2px;
  }
  .site-nav_list{
   display: block;   
@@ -75,13 +107,14 @@ color: $title-text-color;
     margin-bottom: 40px;  
   }    
  }
+
  
  .aust-nav_link{
   display: inline-block;
    
   font-weight: 500;
   font-size: 18px;
-  line-height: 1.16px;
+  line-height: 1.16;
   letter-spacing: 0.02em;
 
   color: $primery-text-color;
@@ -89,8 +122,18 @@ color: $title-text-color;
   &:focus{
    color: $accent-color;   
   }
-
+  
  }
+ 
+ .icon_aust-nav{
+   
+   fill: #757575;
+  margin-right: 10px;
+ }
+ .aust-nav_link:hover .icon_aust-nav{
+   fill: $accent-color;
+ }
+
  .aust-nav_list{
   text-align: center;
    &:not(:last-child){
@@ -111,19 +154,19 @@ color: $title-text-color;
   border: none;
   
   background-color: transparent;
- }
-.button-menu .icon-cross{
+& .icon-cross{
   display: none;  
-}
-
-.button-menu.is-open .icon-cross{
+ }
+&.is-open .icon-cross{
   display: block;  
 
 }
-.button-menu.is-open .icon-menu{
+&.is-open .icon-menu{
   display: none;  
 
 }
+ }
+
 
     
 

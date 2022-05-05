@@ -2,14 +2,16 @@
   font-weight: 700;
   font-size: 24px;
   letter-spacing: 0.03em;
+  line-height: 1.16;
   color: #212121;
 }
 
 .logo-accent {
   font-family: Raleway, sans-serif;
   font-style: normal;
-  font-weight: 400, Regular;
+  font-weight: 700;
   font-size: 24px;
+  line-height: 1.16;
   letter-spacing: 0.03em;
   color: #2196f3;
 }
@@ -17,9 +19,22 @@
 .position-menu {
   position: relative;
   display: block;
+  margin-left: auto;
+  margin-right: auto;
   width: 480px;
   height: 60px;
-  border: 2px solid red;
+}
+
+.position-menu::after {
+  content: ' ';
+  position: absolute;
+  display: inline-block;
+  top: 59px;
+  left: 0;
+  display: block;
+  width: 480px;
+  height: 0px;
+  border: 1px solid #ECECEC;
 }
 
 .header {
@@ -29,7 +44,6 @@
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  margin: 0 auto;
   padding: 10px 15px;
   -webkit-box-align: center;
       -ms-flex-align: center;
@@ -58,7 +72,7 @@
   display: inline-block;
   font-weight: 500;
   font-size: 18px;
-  line-height: 1.16px;
+  line-height: 1.16;
   letter-spacing: 0.02em;
   -webkit-text-size-adjust: 100%;
      -moz-text-size-adjust: 100%;
@@ -69,6 +83,21 @@
 
 .site-nav_link:hover, .site-nav_link:focus {
   color: #2196f3;
+}
+
+.site-nav_link.current {
+  position: relative;
+  color: #2196f3;
+}
+
+.site-nav_link.current::after {
+  content: ' ';
+  position: absolute;
+  top: 29px;
+  left: 0px;
+  width: 100%;
+  border: 2px solid #2196f3;
+  border-radius: 2px;
 }
 
 .site-nav_list {
@@ -84,13 +113,22 @@
   display: inline-block;
   font-weight: 500;
   font-size: 18px;
-  line-height: 1.16px;
+  line-height: 1.16;
   letter-spacing: 0.02em;
   color: #757575;
 }
 
 .aust-nav_link:hover, .aust-nav_link:focus {
   color: #2196f3;
+}
+
+.icon_aust-nav {
+  fill: #757575;
+  margin-right: 10px;
+}
+
+.aust-nav_link:hover .icon_aust-nav {
+  fill: #2196f3;
 }
 
 .aust-nav_list {
