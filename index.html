@@ -15,11 +15,41 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
     />
     <link rel="stylesheet" href="./dist/css/main.min.css" />
-  </head>
+  </head >
   <body  >
     <!-- шапкааа-->
-    <header>
-      <div class="container main-nav">
+    <header class="position-menu container-header">
+      <!-- <div class=" "> -->
+        <a href="./index.html" class="logo"> <span class="logo-accent" >Web</span> Studio</a>
+
+       
+        <div class="mobile-menu">
+          <button type="button" class="button-menu is-open" 
+         aria-expanded="false" 
+         data-menu-button>
+          <svg
+            
+            width="40px"
+            height="40px"
+            aria-label="переключатель мобильного меню">
+            <use class="icon-cross" href="./images/symbol-defs.svg#icon-close"></use>
+            <use class="icon-menu" href="./images/symbol-defs.svg#icon-menu"  ></use>
+          </svg>
+        </button>
+          <nav class="site-nav">
+          <li class="site-nav_list"><a href="./index.html" class="site-nav_link">Студия</a></li>
+          <li class="site-nav_list"><a href="./portfolio.html" class="site-nav_link">Портфолио</a></li>
+          <li class="site-nav_list"><a href="#" class="site-nav_link">Контакты</a></li>
+        </nav>
+        <ul class="aust-nav">
+          <li class="aust-nav_list"><a href="mailto:info@devstudio.com" class="aust-nav_link">info@devstudio.com</a></li>
+          <li class="aust-nav_list"><a href="tel:+38-096-111-11-11" class="aust-nav_link">+38 096 111 11 11</a></li>
+        </ul>
+         
+        
+        </div>
+      <!-- </div> -->
+      <!-- <div class="container main-nav">
         <nav class="flex">
           <a href="./index.html" class="logo">
             <span class="logo-accent">Web</span> Studio</a
@@ -52,12 +82,12 @@
             >
           </li>
         </ul>
-      </div>
+      </div> -->
     </header>
     <!-- sec1 -->
     <main>
       <!-- hero -->
-      <section class="hero">
+      <!-- <section class="hero">
         <div class="hero-center">
           <h1 class="title">
             ЭФФЕКТИВНЫЕ РЕШЕНИЯ<br />
@@ -68,9 +98,9 @@
           </button>
         </div>
         
-      </section>
+      </section> -->
       <!-- особенности -->
-      <section class="feature">
+      <!-- <section class="feature">
         <div class="container">
           <ul class="list">
             <li class="item">
@@ -124,9 +154,9 @@
             </li>
           </ul>
         </div>
-      </section>
+      </section> -->
       <!-- Чем мы занимаемся -->
-      <section class="section">
+      <!-- <section class="section">
         <div class="container">
           <h2 class="title">Чем мы занимаемся</h2>
           <ul class="list">
@@ -168,9 +198,9 @@
             </li>
           </ul>
         </div>
-      </section>
+      </section> -->
       <!-- Наша команда -->
-      <section class="section our-team">
+      <!-- <section class="section our-team">
         <div class="container">
           <h2 class="title">Наша команда</h2>
           <ul class="list">
@@ -372,9 +402,9 @@
             </li>
           </ul>
         </div>
-      </section>
+      </section> -->
       <!-- постоянные клиенты -->
-      <section class="section">
+      <!-- <section class="section">
         <div class="container">
           <h2 class="title">Постоянные клиенты</h2>
           <ul class="list">
@@ -423,9 +453,9 @@
           </ul>
         </div>
       </section>
-    </main>
+    </main> -->
     <!-- footer -->
-    <footer class="footer">
+    <!-- <footer class="footer">
       <div class="container container-footer">
         <div>
           <a href="" class="logo logo-footer"
@@ -495,10 +525,10 @@
           </ul>
         </div>
       </div>
-    </footer>
+    </footer> -->
 
 
-    <div class="backdrop is-hidden" data-modal>
+    <!-- <div class="backdrop is-hidden" data-modal>
 
   <div class="modal">
     <h2 class="modal-text">Оставьте свои данные, мы вам перезвоним</h2>
@@ -569,8 +599,9 @@
     </button>
   </div>
 
-    </div>
+    </div> -->
 
+    <script src="./js/menu.js"></script>
     <script src="./js/modal.js"></script>
   </body>
 </html>
