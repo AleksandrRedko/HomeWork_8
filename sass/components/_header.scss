@@ -158,7 +158,8 @@ color: $title-text-color;
   display: none;  
  }
 &.is-open .icon-cross{
-  display: block;  
+  display: block;
+
 
 }
 &.is-open .icon-menu{
@@ -167,6 +168,15 @@ color: $title-text-color;
 }
  }
 
+.svg_button-menu:focus ,
+.svg_button-menu:hover{
+  & .icon-cross{
+     fill: $accent-color;
+  }
+  & .icon-menu{
+     fill: $accent-color;
+  }
+}
 
     
 
