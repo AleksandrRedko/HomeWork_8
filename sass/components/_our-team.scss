@@ -1,0 +1,81 @@
+.our-team{
+    background-color: #F5F4FA;
+    text-align: center;
+    padding: 60px 0px;
+}
+.our-team_title{
+    margin-bottom: 30px;
+color: $title-text-color;
+
+    font-weight: 700;
+font-size: 28px;
+line-height: 1.18;
+
+
+text-align: center;
+letter-spacing: 0.03em;
+
+}
+.card{
+    display: block;
+    
+background: #FFFFFF;
+
+
+box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+border-radius: 0px 0px 4px 4px;
+
+&.imagin{
+        display: block;
+    max-width: 100%;
+    height: auto;
+}
+& .title-name{
+    color: $title-text-color;
+    font-weight: 500;
+font-size: 16px;
+line-height: 1.18;
+letter-spacing: 0.03em;
+
+margin-bottom: 10px;
+
+}
+
+& .title-profeshion{
+    font-weight: 400;
+font-size: 16px;
+line-height: 1.18;
+
+letter-spacing: 0.03em;
+
+margin-bottom: 16px;
+}
+
+}
+.card:not(:last-child){
+    margin-bottom: 30px;
+}
+
+.svg-link{
+    background-position: center;
+    width: 20px;
+    height: 20px;
+}
+.networks-item{
+    display: inline-block;
+    // width: 44px;
+    // height: 44px;
+    // border-radius: 50%;
+    // background-color: aqua;
+}
+.social-networks{
+    margin-bottom: 24px;
+}
+.networks-link{
+        display: block;
+    width: 44px;
+    height: 44px;
+    padding: 12px;
+    text-align: center;
+    border-radius: 50%;
+}

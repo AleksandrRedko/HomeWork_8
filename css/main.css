@@ -179,6 +179,7 @@
 }
 
 .container {
+  margin-bottom: 60px;
   padding: 0px 15px;
   width: 480px;
   border: 2px solid black;
@@ -190,7 +191,7 @@ body {
   font-family: 'Roboto';
   font-style: normal;
   font-size: 14px;
-  line-height: 1.2;
+  line-height: 1.71;
   letter-spacing: 0.03em;
   letter-spacing: 0.03em;
 }
@@ -232,5 +233,156 @@ img {
   display: block;
   max-width: 100%;
   height: auto;
+}
+
+.hero {
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 60px;
+  width: 480px;
+  height: 400px;
+  background-image: url(../../images/headermob.jpg);
+}
+
+.hero-background {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  height: 100%;
+  background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.8)), to(rgba(47, 48, 58, 0.8)));
+  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.8), rgba(47, 48, 58, 0.8));
+}
+
+.hero-center {
+  display: block;
+  text-align: center;
+}
+
+.hero-center .title {
+  margin-bottom: 30px;
+  color: #ffffff;
+  font-weight: 900;
+  font-size: 26px;
+  line-height: 1.62;
+  text-align: center;
+  letter-spacing: 0.06em;
+}
+
+.button-primery {
+  display: inline-block;
+  min-width: 200px;
+  height: 50px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
+  letter-spacing: 0.06em;
+  color: #ffffff;
+  background: #2196f3;
+  border: none;
+  border-radius: 4px;
+}
+
+.feature-svg {
+  display: block;
+  background: #F5F4FA;
+  border-radius: 4px;
+  text-align: center;
+  padding: 25px 0px;
+  margin-bottom: 30px;
+}
+
+.feature-title {
+  color: #212121;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  text-align: center;
+  letter-spacing: 0.03em;
+  margin-bottom: 10px;
+}
+
+.feature-item:not(:last-child) {
+  margin-bottom: 30px;
+}
+
+.our-team {
+  background-color: #F5F4FA;
+  text-align: center;
+  padding: 60px 0px;
+}
+
+.our-team_title {
+  margin-bottom: 30px;
+  color: #212121;
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 1.18;
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+
+.card {
+  display: block;
+  background: #FFFFFF;
+  -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+          box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+}
+
+.card.imagin {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.card .title-name {
+  color: #212121;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.18;
+  letter-spacing: 0.03em;
+  margin-bottom: 10px;
+}
+
+.card .title-profeshion {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.18;
+  letter-spacing: 0.03em;
+  margin-bottom: 16px;
+}
+
+.card:not(:last-child) {
+  margin-bottom: 30px;
+}
+
+.svg-link {
+  background-position: center;
+  width: 20px;
+  height: 20px;
+}
+
+.networks-item {
+  display: inline-block;
+}
+
+.social-networks {
+  margin-bottom: 24px;
+}
+
+.networks-link {
+  display: block;
+  width: 44px;
+  height: 44px;
+  padding: 12px;
+  text-align: center;
+  border-radius: 50%;
 }
 /*# sourceMappingURL=main.css.map */

@@ -1,0 +1,23 @@
+
+
+.feature-svg{
+    display: block;
+    background: #F5F4FA;
+border-radius: 4px;
+text-align: center;
+padding: 25px 0px;
+margin-bottom: 30px;
+}
+.feature-title{
+    color: $title-text-color;
+    font-weight: 700;
+font-size: 14px;
+line-height: 1.14;
+text-align: center;
+letter-spacing: 0.03em;
+
+margin-bottom: 10px;
+}
+.feature-item:not(:last-child){
+    margin-bottom: 30px;
+}
