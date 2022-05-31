@@ -1,0 +1,51 @@
+.clients-title{
+     margin-bottom: 30px;
+color: $title-text-color;
+
+    font-weight: 700;
+font-size: 28px;
+line-height: 1.18;
+
+
+text-align: center;
+letter-spacing: 0.03em;
+}
+.clients-container{
+    margin: 60px 0px;
+    
+}
+.clients-list{
+    display: flex;
+    flex-wrap: wrap;
+    margin: -15px;
+}
+.clients-li{
+    
+    margin: 15px;
+}
+
+.clients{
+    display: flex;
+    width: 210px;
+height: 90px;
+align-items:center;
+justify-content: center;
+
+
+border: 1px solid #AFB1B8;
+border-radius: 4px;
+
+&:hover,
+&:focus{
+    border: 1px solid $accent-color;
+}
+
+&:hover .clients-svg,
+&:focus .clients-svg{
+    fill: $accent-color;
+}
+}
+
+.clients-svg{
+    fill: #AFB1B8;
+}

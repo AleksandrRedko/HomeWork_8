@@ -18,6 +18,7 @@ letter-spacing: 0.03em;
 }
 .card{
     display: block;
+    height: auto;
     
 background: #FFFFFF;
 
@@ -25,10 +26,11 @@ background: #FFFFFF;
 box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
 border-radius: 0px 0px 4px 4px;
 
-&.imagin{
-        display: block;
-    max-width: 100%;
-    height: auto;
+& .imagin{
+        
+  width: 480px;
+  height: auto;
+  margin-bottom: 30px;
 }
 & .title-name{
     color: $title-text-color;
@@ -60,16 +62,16 @@ margin-bottom: 16px;
     background-position: center;
     width: 20px;
     height: 20px;
+    fill: #AFB1B8;
+
+   
 }
 .networks-item{
     display: inline-block;
-    // width: 44px;
-    // height: 44px;
-    // border-radius: 50%;
-    // background-color: aqua;
+    
 }
 .social-networks{
-    margin-bottom: 24px;
+   padding-bottom: 24px;
 }
 .networks-link{
         display: block;
@@ -78,4 +80,14 @@ margin-bottom: 16px;
     padding: 12px;
     text-align: center;
     border-radius: 50%;
+
+    &:hover,
+    &:focus{
+        background-color: $accent-color ;
+    }
+
+     &:hover .svg-link,
+    &:focus .svg-link{
+        fill:$primery-white-color ;
+    }
 }

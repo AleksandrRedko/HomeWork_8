@@ -182,7 +182,6 @@
   margin-bottom: 60px;
   padding: 0px 15px;
   width: 480px;
-  border: 2px solid black;
 }
 
 body {
@@ -330,16 +329,17 @@ img {
 
 .card {
   display: block;
+  height: auto;
   background: #FFFFFF;
   -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
           box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
 }
 
-.card.imagin {
-  display: block;
-  max-width: 100%;
+.card .imagin {
+  width: 480px;
   height: auto;
+  margin-bottom: 30px;
 }
 
 .card .title-name {
@@ -367,6 +367,7 @@ img {
   background-position: center;
   width: 20px;
   height: 20px;
+  fill: #AFB1B8;
 }
 
 .networks-item {
@@ -374,7 +375,7 @@ img {
 }
 
 .social-networks {
-  margin-bottom: 24px;
+  padding-bottom: 24px;
 }
 
 .networks-link {
@@ -384,5 +385,99 @@ img {
   padding: 12px;
   text-align: center;
   border-radius: 50%;
+}
+
+.networks-link:hover, .networks-link:focus {
+  background-color: #2196f3;
+}
+
+.networks-link:hover .svg-link,
+.networks-link:focus .svg-link {
+  fill: #ffffff;
+}
+
+.clients-title {
+  margin-bottom: 30px;
+  color: #212121;
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 1.18;
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+
+.clients-container {
+  margin: 60px 0px;
+}
+
+.clients-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin: -15px;
+}
+
+.clients-li {
+  margin: 15px;
+}
+
+.clients {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 210px;
+  height: 90px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border: 1px solid #AFB1B8;
+  border-radius: 4px;
+}
+
+.clients:hover, .clients:focus {
+  border: 1px solid #2196f3;
+}
+
+.clients:hover .clients-svg,
+.clients:focus .clients-svg {
+  fill: #2196f3;
+}
+
+.clients-svg {
+  fill: #AFB1B8;
+}
+
+.footer {
+  background-color: #2F303A;
+  text-align: center;
+  padding: 60px 0px;
+}
+
+.logo-footer {
+  display: block;
+  margin-bottom: 20px;
+}
+
+.logo-footer .accent {
+  font-family: 'Raleway';
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 1.16;
+  letter-spacing: 0.03em;
+  color: #2196f3;
+}
+
+.logo-footer .white {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 1.16;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: #ffffff;
 }
 /*# sourceMappingURL=main.css.map */
