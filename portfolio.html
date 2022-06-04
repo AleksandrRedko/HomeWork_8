@@ -23,22 +23,37 @@
         <a href="./index.html" class="logo"> <span class="logo-accent" >Web</span> Studio</a>
 
        
-        <div class="mobile-menu">
+        <div class="mobile-menu" data-menu>
          
           <nav class="site-nav">
-          <li class="site-nav_list"><a href="./index.html" class="site-nav_link ">Студия</a></li>
-          <li class="site-nav_list"><a href="./portfolio.html" class="site-nav_link current">Портфолио</a></li>
+          <li class="site-nav_list"><a href="./index.html" class="site-nav_link current">Студия</a></li>
+          <li class="site-nav_list"><a href="./portfolio.html" class="site-nav_link">Портфолио</a></li>
           <li class="site-nav_list"><a href="#" class="site-nav_link">Контакты</a></li>
         </nav>
+        
         <ul class="aust-nav">
-          <li class="aust-nav_list"><a href="mailto:info@devstudio.com" class="aust-nav_link">info@devstudio.com</a></li>
-          <li class="aust-nav_list"><a href="tel:+38-096-111-11-11" class="aust-nav_link">+38 096 111 11 11</a></li>
+          <li class="aust-nav_list"><a href="mailto:info@devstudio.com" class="aust-nav_link">
+            <svg
+            class="icon_aust-nav"
+            Width="16px" 
+            Height="11.2px">
+
+            <use href="./images/symbol-defs.svg#icon-envelope" class="icon_aust-nav"></use>
+          </svg>info@devstudio.com</a></li>
+          <li class="aust-nav_list"><a href="tel:+38-096-111-11-11" class="aust-nav_link">
+            <svg
+            class="icon_aust-nav"
+            Width="10px" 
+            Height="14.94px">
+            <use href="./images/symbol-defs.svg#icon-smartphone" class="icon_aust-nav"></use>
+          </svg>+38 096 111 11 11</a></li>
         </ul>
         </div>
-        <button type="button" class="button-menu is-open" 
+        <button type="button" class="button-menu " 
          aria-expanded="false" 
+         aria-controls="menu-container"
          data-menu-button>
-          <svg
+          <svg class="svg_button-menu"
             
             width="40px"
             height="40px"
@@ -306,49 +321,54 @@
         </div>
       </section>
     </main>
-    <!-- footer -->
+     <!-- footer -->
     <footer class="footer">
-      <div class="container container-footer">
+      <div class=" container-footer">
         <div>
           <a href="" class="logo logo-footer"
-            ><span class="logo-accent">Web</span>
-            <span class="logo-white">Studio</span></a
+            ><span class="accent">Web</span>
+            <span class="white">Studio</span></a
           >
           <address class="text-normal">
-            <span class="accent"> г. Киев, пр-т Леси Украинки, 26</span>
-            <br />info@example.com
-            <br />
-            +38 099 111 11 11
+           
+           <a href="https://www.google.com.ua/maps/place/%D0%B1%D1%83%D0%BB.+%D0%9B%D0%B5%D1%81%D0%B8+%D0%A3%D0%BA%D1%80%D0%B0%D0%B8%D0%BD%D0%BA%D0%B8,+26,+%D0%9A%D0%B8%D0%B5%D0%B2,+02000/@50.4265841,30.5361971,17z/data=!3m1!4b1!4m5!3m4!1s0x40d4cf0e033ecbe9:0x57a4dffefec77da0!8m2!3d50.4265807!4d30.5383858?hl=ru" target="_blank" class="accent " >г. Киев, пр-т Леси Украинки, 26</a>
+           <a href="mailto:info@example.com" class="span footer-adres">info@example.com</a>
+           <a href="tel:+38 099 111 11 11" class="span">+38 099 111 11 11</a> 
+        
           </address>
         </div>
         <div>
-          <b class="white">присоединяйтесь</b>
+          <b class="text-white">присоединяйтесь</b>
           <ul class="network-footer">
-            <li>
-              <a href="svg-footer">
-                <svg class="svg-link">
-                  <use href="./images/symbol-defs.svg#icon-instagramf"></use>
+            <li class="footer-li">
+              <a href="#" class="svg-footer">
+                <svg width="20px"
+                height="20px">
+                  <use href="./images/symbol-defs.svg#icon-instagram-2"></use>
                 </svg>
               </a>
             </li>
-            <li>
-              <a href="svg-footer">
-                <svg class="svg-link">
-                  <use href="./images/symbol-defs.svg#icon-Groupf"></use>
+            <li class="footer-li">
+              <a href="#" class="svg-footer">
+                <svg width="20px"
+                height="20px" >
+                  <use href="./images/symbol-defs.svg#icon-twitter-1"></use>
                 </svg>
               </a>
             </li>
-            <li>
-              <a href="svg-footer">
-                <svg class="svg-link">
-                  <use href="./images/symbol-defs.svg#icon-facebookf"></use>
+            <li class="footer-li">
+              <a href="#" class="svg-footer">
+                <svg width="20px"
+                height="20px" >
+                  <use href="./images/symbol-defs.svg#icon-facebook-1"></use>
                 </svg>
               </a>
             </li>
-            <li>
-              <a href="svg-footer">
-                <svg class="svg-link">
-                  <use href="./images/symbol-defs.svg#icon-linkedinf"></use>
+            <li class="footer-li">
+              <a href="#" class="svg-footer">
+                <svg width="20px"
+                height="20px">
+                  <use href="./images/symbol-defs.svg#icon-linkedin-1"></use>
                 </svg>
               </a>
             </li>
@@ -356,10 +376,10 @@
         </div>
         <div>
           <ul>
-            <li><b class="white">подпишитесь на рассылку</b></li>
+            <li><b class="text-white">подпишитесь на рассылку</b></li>
             <li>
-              <form>
-               
+                
+              <form name="footer-form">
                   <input
                     class="subscribe"
                     type="email"
@@ -367,7 +387,7 @@
                     placeholder="Email"
                     required
                   />
-                
+               
                 <button type="submit" class="primery button-footer">
                   Подписаться
                 </button>
@@ -377,5 +397,7 @@
         </div>
       </div>
     </footer>
+    <script src="./js/menu.js"></script>
+    <script src="./js/modal.js"></script>
   </body>
 </html>
