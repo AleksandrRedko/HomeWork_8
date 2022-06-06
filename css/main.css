@@ -184,6 +184,11 @@
   width: 480px;
 }
 
+.portfolio-container {
+  padding: 60px 15px;
+  width: 480px;
+}
+
 body {
   background-color: #ffffff;
   color: #757575;
@@ -714,5 +719,90 @@ img {
   color: #2196f3;
   text-decoration: underline;
   margin-left: 3px;
+}
+
+.visually-hidden {
+  position: absolute;
+  display: block;
+  width: 1px;
+  height: 1px;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.secondary {
+  display: inline-block;
+  height: 38px;
+  padding: 6px 22px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+  letter-spacing: 0.06em;
+  color: #212121;
+  background: #F5F4FA;
+  border: none;
+  border-radius: 4px;
+}
+
+.secondary:hover, .secondary:focus {
+  color: #ffffff;
+  background: #2196f3;
+}
+
+.button-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin-bottom: 40px;
+}
+
+.porfolio-item:not(:last-child) {
+  margin-right: 8px;
+}
+
+.porfolio-item {
+  display: inline-block;
+}
+
+.porfolio-item:nth-child(-n + 3) {
+  margin-bottom: 15px;
+}
+
+.title-h {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+  color: #212121;
+  margin-bottom: 4px;
+}
+
+.portfolio {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.88;
+  letter-spacing: 0.03em;
+  color: #757575;
+}
+
+.flex-element {
+  background: #FFFFFF;
+  border: 1px solid #EEEEEE;
+}
+
+.flex-element:not(:last-child) {
+  margin-bottom: 30px;
+}
+
+.link-portfolio {
+  padding: 24px 20px;
+}
+
+.overlay {
+  display: none;
 }
 /*# sourceMappingURL=main.css.map */
