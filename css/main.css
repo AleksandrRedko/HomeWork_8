@@ -196,6 +196,8 @@
   .container {
     width: 1200px;
     margin-bottom: 94px;
+    margin-left: auto;
+    margin-right: auto;
   }
 }
 
@@ -268,6 +270,21 @@ img {
   width: 480px;
   height: 400px;
   background-image: url(../../images/headermob.jpg);
+}
+
+@media screen and (min-width: 768px) {
+  .hero {
+    width: 768px;
+    background-image: url(../../images/Heade.jpg);
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .hero {
+    width: 1600px;
+    height: 600px;
+    background-image: url(../../images/headd.jpg);
+  }
 }
 
 .hero-background {
@@ -560,8 +577,45 @@ img {
 
 .footer {
   background-color: #2F303A;
-  text-align: center;
   padding: 60px 0px;
+}
+
+@media screen and (max-width: 1199px) {
+  .footer {
+    text-align: center;
+  }
+}
+
+.container-footer {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media screen and (min-width: 768px) {
+  .container-footer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    width: 768px;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .container-footer {
+    width: 1200px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -webkit-box-align: baseline;
+        -ms-flex-align: baseline;
+            align-items: baseline;
+  }
 }
 
 .logo-footer {
@@ -589,7 +643,12 @@ img {
 
 .text-normal {
   display: block;
-  margin-bottom: 60px;
+}
+
+@media screen and (max-width: 1199px) {
+  .text-normal {
+    margin-bottom: 60px;
+  }
 }
 
 .text-normal .accent {
@@ -609,9 +668,14 @@ img {
   font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
-  text-align: center;
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
+}
+
+@media screen and (max-width: 1199px) {
+  .text-normal .span {
+    text-align: center;
+  }
 }
 
 .text-white {
@@ -640,7 +704,12 @@ img {
 
 .network-footer {
   display: block;
-  margin-bottom: 60px;
+}
+
+@media screen and (max-width: 767px) {
+  .network-footer {
+    margin-bottom: 60px;
+  }
 }
 
 .footer-li {
@@ -653,7 +722,7 @@ img {
 
 .subscribe {
   padding: 15px 16px;
-  width: 450px;
+  min-width: 450px;
   height: 50px;
   margin-bottom: 20px;
   background-color: transparent;
@@ -663,10 +732,19 @@ img {
   border-radius: 4px;
 }
 
+@media screen and (min-width: 1200px) {
+  .subscribe {
+    width: 358px;
+    margin-right: 12px;
+  }
+}
+
 .button-footer {
-  display: inline-block;
+  display: block;
   min-width: 200px;
   height: 50px;
+  margin-left: auto;
+  margin-right: auto;
   font-weight: 700;
   font-size: 16px;
   line-height: 1.88;
@@ -675,6 +753,12 @@ img {
   background: #2196f3;
   border: none;
   border-radius: 4px;
+}
+
+@media screen and (min-width: 1200px) {
+  .button-footer {
+    display: inline-block;
+  }
 }
 
 .footer-adres {
