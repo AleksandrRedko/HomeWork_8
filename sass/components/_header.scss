@@ -8,6 +8,9 @@ line-height: 1.16;
 color: $title-text-color;
    
 }
+
+
+ 
 .logo-accent{
 
  font-family: Raleway, sans-serif;
@@ -27,8 +30,6 @@ color: $title-text-color;
   margin-right: auto;
  width: 480px;
  height: 60px;
- 
-
 
 }
 .position-menu::after{
@@ -52,10 +53,10 @@ color: $title-text-color;
   align-items: center;
   width: 480px;
   height: 60px;
-  
+ 
 }
 
-.mobile-menu{
+  .mobile-menu{
   display: none;
   position: absolute;
   top:100%; 
@@ -71,10 +72,14 @@ color: $title-text-color;
   }
  }
 
+
+
+
  
 
 .site-nav{
- margin-bottom: 60px;   
+ margin-bottom: 60px;
+ 
 }
 .site-nav_link{
   display: inline-block;
@@ -123,6 +128,7 @@ color: $title-text-color;
   font-size: 18px;
   line-height: 1.16;
   letter-spacing: 0.02em;
+   
 
   color: $primery-text-color;
   &:hover,
@@ -151,7 +157,8 @@ color: $title-text-color;
  
 
 
- .button-menu{
+ 
+   .button-menu{
   display: inline-flex;   
   
   margin: 0px;
@@ -161,6 +168,8 @@ color: $title-text-color;
   border: none;
   
   background-color: transparent;
+   
+ 
 & .icon-cross{
   display: none;  
  }
@@ -175,6 +184,8 @@ color: $title-text-color;
 }
  }
 
+
+ 
 .svg_button-menu:focus ,
 .svg_button-menu:hover{
   & .icon-cross{
@@ -184,6 +195,7 @@ color: $title-text-color;
      fill: $accent-color;
   }
 }
+ 
 
     
 
