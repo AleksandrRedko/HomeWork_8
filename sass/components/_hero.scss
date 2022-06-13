@@ -2,10 +2,17 @@
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 60px;
-    width: 480px;
+    // width: 480px;
   height: 400px;
-   
+    @media screen and (max-width:767px){
+    max-width: 676px;
+    background-position: center;
+    background-repeat: no-repeat;
+    
+
     background-image: url(../../images/headermob.jpg);
+    }
+    
     @media screen and (min-width:768px){
         width: 768px;
         background-image: url(../../images/Heade.jpg);

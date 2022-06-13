@@ -31,9 +31,13 @@
 }
 
 .modal {
+  @media screen and (max-width:1199px){
+    max-width: 450px;
+    height: 609px;
+  }
   position: absolute;
-  min-width: 528px;
-  min-height: 581px;
+  // min-width: 528px;
+  // min-height: 581px;
   
   
   
