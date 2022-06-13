@@ -1,12 +1,18 @@
  
 .logo{ 
+  
 font-weight: 700;
 font-size: 24px;
 letter-spacing: 0.03em;
 line-height: 1.16;
 
 color: $title-text-color;
-   
+   @media screen and(min-width:768px){
+    margin: 26px 0; 
+   }
+   @media screen and (min-width:1200px){
+   margin-right: 85px;  
+   }
 }
 
 
@@ -23,6 +29,7 @@ color: $title-text-color;
  color: $accent-color;
    
 }
+@media screen and (max-width:767px){
 .position-menu{
   position: relative;
  display: block;
@@ -32,6 +39,8 @@ color: $title-text-color;
  height: 60px;
 
 }
+}
+
 .position-menu::after{
   content: ' ';
   position: absolute;
@@ -41,22 +50,42 @@ color: $title-text-color;
   display: block;
   width: 480px;
   height: 0px;
+  
 
   border: 1px solid #ECECEC;
+  @media screen and (min-width:768px){
+    top: 79px;
+    width: 100%;
+  }
 }
 .header{
   display: flex;
-  justify-content: space-between;
+ margin-left: auto;
+  margin-right: auto;
+  padding: 0px 15px;
   
   
-  padding: 10px 15px;
+  @media screen and (max-width:767px){
+    padding: 10px 15px;
   align-items: center;
+  justify-content: space-between;
   width: 480px;
   height: 60px;
+  }
+  @media screen and (min-width:768px) and (max-width:1199px){
+    width: 768px;
+    height: 80px;
+   
+    justify-content: space-between;
+  }
+  @media screen and (min-width:1200px){
+    width: 1200px;
+    height: 80px;
+  }
  
 }
-
-  .mobile-menu{
+@media screen and (max-width:767px) {
+   .mobile-menu{
   display: none;
   position: absolute;
   top:100%; 
@@ -72,13 +101,35 @@ color: $title-text-color;
   }
  }
 
+}
+.mobile-menu{
+  @media screen and (min-width:768px){
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+ 
 
 
 
  
 
 .site-nav{
- margin-bottom: 60px;
+  @media screen and (max-width:767px){
+margin-bottom: 60px;
+  }
+ 
+ @media screen and (min-width:768px){
+   display: flex;
+   flex-wrap: nowrap;
+   margin-right: 84px;
+ }
+
+  @media screen and (min-width:1200px){
+margin-right: 305px;
+  }
  
 }
 .site-nav_link{
@@ -89,6 +140,13 @@ color: $title-text-color;
   line-height: 1.16;
   letter-spacing: 0.02em;
   text-size-adjust: 100%;
+  @media screen and (min-width:768px){
+    font-weight: 500;
+font-size: 14px;
+line-height: 1.14;
+letter-spacing: 0.02em;
+
+  }
 
   color: $title-text-color;
   &:hover,
@@ -111,15 +169,32 @@ color: $title-text-color;
    
    border: 2px solid $accent-color;
    border-radius: 2px;
+   @media screen and(min-width:768px){
+   top: 43px;  
+   }
  }
  .site-nav_list{
-  display: block;   
+   @media screen and(max-width:767px){
+     display: block;   
   text-align: center;
   &:not(:last-child){
     margin-bottom: 40px;  
   }    
+   }
+  @media screen and (min-width:768px){
+    &:not(:last-child){
+      margin-right: 50px;
+    }
+  }
  }
-
+ 
+  
+ .aust-nav{
+   @media screen and (min-width:1200px){
+     display: flex;
+     flex-wrap: nowrap;
+   }
+ }
  
  .aust-nav_link{
   display: inline-block;
@@ -135,13 +210,34 @@ color: $title-text-color;
   &:focus{
    color: $accent-color;   
   }
-  
+  @media screen and (min-width:768px){
+    font-weight: 500;
+font-size: 12px;
+line-height: 1.16;
+
+
+letter-spacing: 0.02em;
+
+  }
+  @media screen and (min-width:1200px){
+    font-weight: 500;
+font-size: 14px;
+line-height: 1.14;
+letter-spacing: 0.02em;
+
+  }
  }
  
  .icon_aust-nav{
    
    fill: #757575;
   margin-right: 10px;
+  @media screen and (min-width:768px) {
+    margin-right: 4px;
+  }
+  @media screen and(min-width:1200px){
+    margin-right: 10px;
+  }
  }
  .aust-nav_link:hover .icon_aust-nav{
    fill: $accent-color;
@@ -152,7 +248,21 @@ color: $title-text-color;
    &:not(:last-child){
    margin-bottom: 16px;  
    }
- }
+   @media screen and (min-width:768px){
+        &:not(:last-child){
+   margin-bottom: 10px;  
+   }
+   }
+   @media screen and (min-width:1200px){
+        &:not(:last-child){
+   margin-right: 30px; 
+   margin-bottom: 0px; 
+   }
+   }
+    
+     
+   }
+ 
 
  
 
@@ -183,7 +293,11 @@ color: $title-text-color;
 
 }
  }
-
+.button-menu{
+  @media screen and (min-width:768px) {
+    display: none;
+  }
+}
 
  
 .svg_button-menu:focus ,
