@@ -1014,6 +1014,16 @@ img {
   line-height: 1.15;
 }
 
+@media screen and (max-width: 1199px) {
+  .modal-text {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 1.5;
+    text-align: center;
+    letter-spacing: 0.03em;
+  }
+}
+
 .modal-complete {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1033,6 +1043,12 @@ img {
   margin-bottom: 28px;
 }
 
+@media screen and (max-width: 1199px) {
+  .div-label {
+    width: 370px;
+  }
+}
+
 .inputs {
   padding: 0px;
   padding-left: 42px;
@@ -1043,6 +1059,12 @@ img {
   font: initial;
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
+}
+
+@media screen and (max-width: 1199px) {
+  .inputs {
+    width: 370px;
+  }
 }
 
 .labels {
@@ -1096,15 +1118,57 @@ img {
   border-radius: 4px;
 }
 
+@media screen and (max-width: 1199px) {
+  .textarea {
+    width: 370px;
+  }
+}
+
 .textarea:focus {
   border: 1px solid #2196f3;
 }
 
+.modal-p {
+  margin-bottom: 30px;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.16;
+  letter-spacing: 0.03em;
+  color: #757575;
+}
+
 .agreements {
-  display: block;
+  display: inline-block;
   color: #2196f3;
   text-decoration: underline;
   margin-left: 3px;
+}
+
+.button-close {
+  display: inline-block;
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  width: 30px;
+  height: 30px;
+  padding: 6px;
+  border-radius: 50%;
+  background: #FFFFFF;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.button-close:hover, .button-close:focus {
+  border: 1px solid #2196f3;
+}
+
+.button-close:hover .svg-close {
+  fill: #2196f3;
+}
+
+.svg-close {
+  width: 100%;
+  height: 100%;
+  background-position: center;
 }
 
 .visually-hidden {
