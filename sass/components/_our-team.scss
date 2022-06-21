@@ -44,11 +44,10 @@ border-radius: 0px 0px 4px 4px;
      margin: 15px;
   }
 & .imagin{
-        
-  width: 480px;
-  height: auto;
-  margin-bottom: 30px;
+    width: 100%;
+    height: auto;
 }
+ 
 & .title-name{
     color: $title-text-color;
     font-weight: 500;
@@ -69,6 +68,17 @@ letter-spacing: 0.03em;
 
 margin-bottom: 16px;
 }
+
+}
+.pictures{
+    overflow: hidden;
+    width: 100%;
+    height: 260px;
+    margin-bottom: 30px;
+    @media screen and (max-width:767px){
+     height: 320px;
+     
+ }
 
 }
 .card:not(:last-child){

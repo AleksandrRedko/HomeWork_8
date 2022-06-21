@@ -193,13 +193,27 @@
           <h2 class="our-team_title">Наша команда</h2>
           <ul class="list">
             <li class="card">
-              <img
+              <div class="pictures">
+                <picture>
+                <source 
+                srcset="
+                ./images/nikolayWebP@2x.webp 2x,  
+                ./images/nikolayWebP.webp 1x"  
+                    
+                   type="image/webp" >
+                
+                <img
                 class="imagin"
-                src="./images/kolya.jpg"
+                srcset="
+                   ./images/nikolay@2x.jpg 540w ,
+                   ./images/nikolay.jpg 270w"
+                src="./images/nikolay.jpg"
                 alt="Николай Кучеренко"
-                width="270"
-                height="260"
-              />
+                 sizes="(min-width: 1200px) 22.5vw, (min-width: 768px) 45vw, (min-width: 480px) 95vw"
+               />
+              </picture>
+              </div>
+              
               <h3 class="title-name">Николай Кучеренко</h3>
               <p class="title-profeshion">Product Designer</p>
               <ul class="social-networks">
