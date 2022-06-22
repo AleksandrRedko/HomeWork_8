@@ -30,8 +30,7 @@
     height: 609px;
   }
   position: absolute;
-  // min-width: 528px;
-  // min-height: 581px;
+  
   
   top: 50%;
   left: 50%;
@@ -94,6 +93,7 @@ letter-spacing: 0.03em;
   font: initial;
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
+  @extend %transition;
 
    @media screen and (max-width:1199px){
     width: 370px;
@@ -105,13 +105,15 @@ letter-spacing: 0.03em;
 
   top: 12px;
   left: 42px;
-  ;
+  @extend %transition;
+  
 }
 
-.inputs:focus {
+.inputs:focus,
+.inputs:hover {
   font: inherit;
   border: 1px solid $accent-color;
-
+  @extend %transition;
  
 }
 
@@ -121,7 +123,7 @@ letter-spacing: 0.03em;
 }
 .inputs:focus + .labels {
   transform: translateY(-30px) translateX(-25px);
-
+  @extend %transition;
   color:$accent-color;
 }
 
@@ -135,7 +137,7 @@ letter-spacing: 0.03em;
   fill:$title-text-color;
 
   transform: translateY(-50%);
-  
+  @extend %transition;
 }
 
 .inputs:not(:placeholder-shown) ~ .icon {
@@ -143,7 +145,7 @@ letter-spacing: 0.03em;
 }
 .inputs:focus ~ .icon {
   fill: $accent-color;
-
+  @extend %transition;
   
 }
 
@@ -158,10 +160,12 @@ letter-spacing: 0.03em;
   border: 1px solid rgba(33, 33, 33, 0.2);
   box-sizing: border-box;
   border-radius: 4px;
+  @extend %transition;
    @media screen and (max-width:1199px){
     width: 370px;
   }
-  &:focus {
+  &:focus,
+  &:hover {
   border: 1px solid $accent-color;
   }
 }
@@ -194,17 +198,21 @@ color: #757575;
   padding: 6px;
   border-radius: 50%;
   background: #FFFFFF;
+  @extend %transition;
 border: 1px solid rgba(0, 0, 0, 0.1);
 &:hover ,
 &:focus{
   border: 1px solid $accent-color;
+  @extend %transition;
 }
 &:hover .svg-close{
   fill: $accent-color;
+  @extend %transition;
 }
 }
 .svg-close{
   width: 100%;
   height: 100%;
   background-position: center;
+  @extend %transition;
 }
