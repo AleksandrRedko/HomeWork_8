@@ -47,18 +47,22 @@ justify-content: center;
 
 border: 1px solid #AFB1B8;
 border-radius: 4px;
+@extend %transition;
 
 &:hover,
 &:focus{
     border: 1px solid $accent-color;
+    @extend %transition;
 }
 
 &:hover .clients-svg,
 &:focus .clients-svg{
     fill: $accent-color;
+    @extend %transition;
 }
 }
 
 .clients-svg{
     fill: #AFB1B8;
+    @extend %transition;
 }

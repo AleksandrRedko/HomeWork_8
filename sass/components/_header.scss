@@ -140,6 +140,7 @@ margin-right: 305px;
   line-height: 1.16;
   letter-spacing: 0.02em;
   text-size-adjust: 100%;
+  @extend %transition;
   @media screen and (min-width:768px){
     font-weight: 500;
 font-size: 14px;
@@ -151,11 +152,13 @@ letter-spacing: 0.02em;
   color: $title-text-color;
   &:hover,
   &:focus{
-   color: $accent-color;   
+   color: $accent-color; 
+   @extend %transition;  
   }
   &.current{
     position: relative;
     color: $accent-color;
+    
   }   
  }
 
@@ -168,6 +171,7 @@ letter-spacing: 0.02em;
    
    
    border: 2px solid $accent-color;
+   background-color: $accent-color;
    border-radius: 2px;
    @media screen and(min-width:768px){
    top: 43px;  
@@ -203,12 +207,14 @@ letter-spacing: 0.02em;
   font-size: 18px;
   line-height: 1.16;
   letter-spacing: 0.02em;
+  @extend %transition;
    
 
   color: $primery-text-color;
   &:hover,
   &:focus{
-   color: $accent-color;   
+   color: $accent-color;
+   @extend %transition;   
   }
   @media screen and (min-width:768px){
     font-weight: 500;
@@ -232,6 +238,7 @@ letter-spacing: 0.02em;
    
    fill: #757575;
   margin-right: 10px;
+  @extend %transition;
   @media screen and (min-width:768px) {
     margin-right: 4px;
   }
@@ -241,6 +248,7 @@ letter-spacing: 0.02em;
  }
  .aust-nav_link:hover .icon_aust-nav{
    fill: $accent-color;
+   @extend %transition;
  }
 
  .aust-nav_list{

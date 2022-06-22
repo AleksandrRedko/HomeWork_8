@@ -193,6 +193,7 @@
   left: 0px;
   width: 100%;
   border: 2px solid #2196f3;
+  background-color: #2196f3;
   border-radius: 2px;
 }
 
@@ -926,6 +927,7 @@ img {
   height: 50px;
   margin-bottom: 20px;
   background-color: transparent;
+  color: rgba(255, 255, 255, 0.6);
   border: 1px solid rgba(255, 255, 255, 0.3);
   -webkit-filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
           filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
@@ -973,6 +975,11 @@ img {
   }
 }
 
+.footer-icon {
+  margin-left: 10px;
+  vertical-align: middle;
+}
+
 .footer-adres {
   margin-bottom: 8px;
 }
@@ -990,10 +997,6 @@ img {
   padding: 20px 0;
 }
 
-.modalWrapper {
-  padding: 40px;
-}
-
 .backdrop.is-hidden {
   opacity: 0;
   pointer-events: none;
@@ -1005,8 +1008,6 @@ img {
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
-  width: 528px;
-  min-height: 581px;
   padding: 40px;
   background: #ffffff;
   -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -1018,6 +1019,13 @@ img {
   .modal {
     max-width: 450px;
     height: 609px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .modal {
+    width: 528px;
+    min-height: 581px;
   }
 }
 
@@ -1054,7 +1062,7 @@ img {
 
 .div-label {
   position: relative;
-  width: 448px;
+  width: 100%;
   height: 40px;
   margin-bottom: 28px;
 }
@@ -1069,7 +1077,7 @@ img {
   padding: 0px;
   padding-left: 42px;
   margin-bottom: 28px;
-  width: 448px;
+  width: 100%;
   height: 40px;
   outline: none;
   font: initial;
@@ -1152,6 +1160,13 @@ img {
   line-height: 1.16;
   letter-spacing: 0.03em;
   color: #757575;
+}
+
+@media screen and (min-width: 1200px) {
+  .modal-p {
+    font-size: 14px;
+    line-height: 1.71;
+  }
 }
 
 .agreements {
@@ -1360,7 +1375,8 @@ img {
   overflow: hidden;
 }
 
-.networks-link, .networks-link:hover, .networks-link:focus, .inputs, .labels, .inputs:focus,
+.site-nav_link, .site-nav_link:hover, .site-nav_link:focus, .aust-nav_link, .aust-nav_link:hover, .aust-nav_link:focus, .icon_aust-nav, .aust-nav_link:hover .icon_aust-nav, .networks-link, .networks-link:hover, .networks-link:focus, .clients, .clients:hover, .clients:focus, .clients:hover .clients-svg,
+.clients:focus .clients-svg, .clients-svg, .svg-footer, .svg-footer:hover, .svg-footer:focus, .inputs, .labels, .inputs:focus,
 .inputs:hover, .inputs:focus + .labels, .icon, .inputs:focus ~ .icon, .textarea, .button-close, .button-close:hover, .button-close:focus, .button-close:hover .svg-close, .svg-close, .secondary, .secondary:hover, .secondary:focus, .flex-element:hover, .flex-element:hover .overlay, .overlay {
   -webkit-transition-duration: 250ms;
           transition-duration: 250ms;
