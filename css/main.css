@@ -986,7 +986,6 @@ img {
 
 .backdrop {
   position: fixed;
-  z-index: 1;
   top: 0;
   left: 0;
   width: 100%;
@@ -994,7 +993,10 @@ img {
   background: rgba(0, 0, 0, 0.2);
   opacity: 1;
   overflow-y: scroll;
-  padding: 20px 0;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-top: 93px;
+  padding-bottom: 93px;
 }
 
 .backdrop.is-hidden {
@@ -1003,7 +1005,7 @@ img {
 }
 
 .modal {
-  position: absolute;
+  position: relative;
   top: 50%;
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
@@ -1015,17 +1017,16 @@ img {
   border-radius: 4px;
 }
 
-@media screen and (max-width: 1199px) {
+@media screen and (min-width: 480px) {
   .modal {
-    max-width: 450px;
-    height: 609px;
+    width: 450px;
+    position: absolute;
   }
 }
 
 @media screen and (min-width: 1200px) {
   .modal {
     width: 528px;
-    min-height: 581px;
   }
 }
 
@@ -1069,8 +1070,14 @@ img {
 
 @media screen and (max-width: 1199px) {
   .div-label {
-    width: 370px;
+    max-width: 370px;
+    display: block;
   }
+}
+
+.div-textarea {
+  width: 100%;
+  margin-bottom: 20px;
 }
 
 .inputs {
@@ -1087,7 +1094,7 @@ img {
 
 @media screen and (max-width: 1199px) {
   .inputs {
-    width: 370px;
+    width: 100%;
   }
 }
 
@@ -1131,10 +1138,9 @@ img {
 }
 
 .textarea {
-  margin-bottom: 20px;
   padding: 12px 16px;
   resize: none;
-  width: 448px;
+  width: 100%;
   height: 120px;
   outline: none;
   border: 1px solid rgba(33, 33, 33, 0.2);
@@ -1145,7 +1151,7 @@ img {
 
 @media screen and (max-width: 1199px) {
   .textarea {
-    width: 370px;
+    width: 100%;
   }
 }
 
