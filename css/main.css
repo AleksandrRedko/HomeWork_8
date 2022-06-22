@@ -446,31 +446,49 @@ img {
 
 @media screen and (max-width: 480px) {
   .hero {
-    max-width: 480px;
+    background-size: 480px, 400px;
     background-position: center;
     background-repeat: no-repeat;
-    background-image: url(../../images/headermob.jpg);
+    background-image: url(../../images/headermobile.jpg);
+  }
+}
+
+@media screen and (max-width: 480px) and (min-devace-pixel-ratio: 2), screen and (max-width: 480px) and (-webkit-min-device-pixel-ratio: 2), screen and (max-width: 480px) and (min-resolution: 192dpi), screen and (max-width: 480px) and (min-resolution: 2dppx) {
+  .hero {
+    background-image: url(../../images/headermobile@2x.jpg);
   }
 }
 
 @media screen and (min-width: 481px) and (max-width: 768px) {
   .hero {
     max-width: 768px;
-    background-image: url(../../images/Heade.jpg);
+    background-image: url(../../images/headertablet.jpg);
     background-size: 768px, 400px;
     background-position: center;
     background-repeat: no-repeat;
   }
 }
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 481px) and (max-width: 768px) and (min-devace-pixel-ratio: 2), screen and (min-width: 481px) and (max-width: 768px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 481px) and (max-width: 768px) and (min-resolution: 192dpi), screen and (min-width: 481px) and (max-width: 768px) and (min-resolution: 2dppx) {
+  .hero {
+    background-image: url(../../images/andreywebp.webp);
+  }
+}
+
+@media screen and (min-width: 769px) {
   .hero {
     max-width: 1600px;
     height: 600px;
-    background-image: url(../../images/headd.jpg);
+    background-image: url(../../images/headerdesctop.jpg);
     background-size: 1600px, 600px;
     background-position: center;
     background-repeat: no-repeat;
+  }
+}
+
+@media screen and (min-width: 769px) and (min-devace-pixel-ratio: 2), screen and (min-width: 769px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 769px) and (min-resolution: 192dpi), screen and (min-width: 769px) and (min-resolution: 2dppx) {
+  .hero {
+    background-image: url(../../images/headerdesctop@2x.jpg);
   }
 }
 
